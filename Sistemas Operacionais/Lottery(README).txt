@@ -1,4 +1,4 @@
-Lottery Scheduling - XV6
+Lottery Scheduling - XV6 (SO)
 ----------------------------------------------------------------------------------------------------------------------------------------------
 Arquivos que foram modificados:
 proc.c(modificado o escalonador, o fork, criado funçoes para calculo e modificado a chamada para mostrar os processos da tabela para acompanhar o desenvolvimento do escalonador)
