@@ -1,0 +1,5 @@
+Trabalho sobre log
+
+Imaginen a situação em que o banco de dados de sua empresa quebrou e vocês precisam implementar o parser do log para recuperar as operações. A atividade consiste em implementar um código capaz de simular um sistema de log UNDO/REDO. O código recebe como entrada um arquivo de log e deve retornar os valores após a execução do parser.  Além disso, o código deve ser capaz de identificar a presença de um checkpoint e trata-lo conforme especificação.
+
+Será fornecido um caso de teste com N transações (N>>5) e M valores (M>>5) 
