@@ -1,0 +1,16 @@
+Trabalho 1: Pisca Leds
+O primeiro trabalho será elaborar um circuito no FPGA que pisca leds.
+
+O circuito deverá piscar leds de maneira visível.
+O circuito deverá poder piscar leds numa temporização exata, de 1 segundo.
+Além disso, a velocidade/ritmo/estilo dos leds piscando deverá poder ser ajustada pelos botões na placa.
+
+
+Trabalho 2: Triângulo em C
+O segundo trabalho é elaborar um programa em C capaz de verificar se um ponto est á dentro de um triângulo.
+
+O programa deve funcionar de 2 ou mais modos:
+O programa deve ser capaz de desenhar o triângulo visualmente.
+O programa deve ser capaz de receber os pontos do triângulos e os postos de teste em formato textual, e produzir resultado também em formato textual, semelhante aos problemas do URI.
+O programa pode ter modos adicionais para testar outras funções, como, por exemplo, o cálculo da determinante.
+O intuito é usar este programa para testar o código em Verilog.
