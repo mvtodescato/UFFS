@@ -1,0 +1,31 @@
+Descrição:
+Implementar as funções de inserção, remoção e impressão de produtos numa lista simplesmente encadeada em assembly para o ARM, utilizando o terminal de um simulador para apresentar o trabalho.
+
+Instruções:
+O programa deve rodar em um simulador e a interação com o usuário deve ser através de um terminal com menu de quatro opções:
+
+OPÇÕES DO MENU:
+(1) Para inserir um produto na lista.
+(2) Para excluir um elemento da lista.
+(3) Para listar todos os campos dos elementos da lista.
+(0) Para finalizar o programa.
+
+Observações: O trabalho pode ser em grupo (3 alunos). Submeter o trabalho via classroom num arquivo com extensão .s.
+
+Estruturas da lista *apenas como exemplo
+
+#define TAM 100
+
+typedef struct produto{
+int codigo;
+char nome[TAM];
+int preco;
+}tp_produto;
+
+typedef struct nodo{
+tp_produto produto;
+struct nodo *prox;
+}tp_nodo;
+
+
+* link do simulador: http://www.ic.unicamp.br/~ranido/livrolm/ferramentas/arm.html
