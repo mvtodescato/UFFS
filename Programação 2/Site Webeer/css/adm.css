@@ -1,0 +1,93 @@
+
+header, footer {
+  color:  black;               
+  padding: 10px;
+  position: relative;
+  margin-right: 80px;
+}
+
+header{
+  background-image: url('imagens/beer.jpg'); 
+  background-size: 100%;
+}
+footer{
+  background-image: url(imagens/footer.jpg);
+}
+header a:link, footer a:link {
+  color:  #663300;
+  text-decoration: none;
+}
+
+header h1 {
+
+  position: relative;
+  text-align: center;
+  text-shadow: 5px 0 10px #000; 
+  color: #eee; 
+  font-family: 'UnifrakturMaguntia', cursive;
+  font-size: 2em;
+}
+header h1 p{
+  bottom: 20px;
+}
+header a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+h1{
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: black;
+}
+
+nav ul li a {
+  display: block;
+  padding: 25px 50px;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  background: rgba(0, 0, 0, .1);
+}
+
+#total {
+  display: inline;
+  font-weight: bold;
+  color: red;
+}
+
+
+table {
+  border: 1px solid gray;
+  border-radius: 5px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  background-color: white;
+}
+table th, table td {
+  padding: 10px;
+}
+tr {
+  border-bottom: 1px solid gray;
+}
+
+.container {
+  display: flex;
+}
+main {
+  flex: 80%;
+  padding-top: 20px;
+  margin: 15px;
+}
+
+
+

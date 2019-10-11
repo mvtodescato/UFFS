@@ -1,0 +1,358 @@
+
+* {
+  box-sizing: border-box;    
+}
+
+
+body {
+  font-family: 'Aref Ruqaa', serif;
+  margin: 0;
+}
+
+.col-1, .col-2, .col-3 {
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+footer{
+	clear: left; 
+}
+
+.container {
+  background-color: #fff;
+  overflow: hidden; 
+}
+
+
+.pedidos{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+  margin-left: 0px;
+}
+
+
+
+h2 {
+  padding: 10px 0 0px 10px; 
+  color: black;
+  font-size: 2em;
+
+}
+
+
+.cadastro {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.cadastro a:visited {
+  color:  #663300;
+}
+
+.cadastro a:hover{
+  text-decoration: underline;
+}
+header, footer {
+  color:  black;               
+  padding: 10px;
+  position: relative;
+}
+
+header{
+  background-image: url('imagens/beer.jpg');
+  background-size: 100%;
+}
+footer{
+  background-image: url(imagens/footer.jpg);
+}
+header a:link, footer a:link {
+  color:  #663300;
+  text-decoration: none;
+}
+
+header h1 {
+
+  position: relative;
+  text-align: center;
+  text-shadow: 5px 0 10px #000; 
+  color: #fff; 
+  font-family: 'UnifrakturMaguntia', cursive;
+  font-size: 6em;
+}
+header h1 p{
+  bottom: 20px;
+}
+header a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+h1{
+  text-align: center;
+}
+
+.carrinho {
+  position: absolute;
+  top: 0;
+  right: 10px;
+ 
+}
+
+
+.carrinho a:visited {
+  color:  #663300;
+}
+
+
+.menu-opcoes{
+list-style:none; 
+float:left;
+}
+
+.menu-opcoes li{
+position:left; 
+float:left; 
+ 
+}
+
+.menu-opcoes li a{color: #fff; text-decoration:none; padding:10px 80px; display:block; font-size: 23px;}
+ 
+.menu-opcoes li a:hover{
+color:white; 
+-moz-box-shadow:30 5px 20px 0 red; 
+-webkit-box-shadow:0 1px 10px 0 #000; 
+text-shadow:0px 0px 5px #000; 
+}
+
+.menu-opcoes li  ul{
+position:absolute; 
+top:70px; 
+width:264px;
+left: 289px;
+background-color:black; 
+padding-right: 0px;
+padding-left: 0px;
+display:none;
+
+}   
+
+.menu-opcoes li:hover ul, .menu-opcoes li.over ul{display:block;}
+
+
+.menu-opcoes li ul li{
+border:1px solid #c0c0c0; 
+display: block;
+width:265px;
+}
+
+
+section.busca {
+  border-radius: 0px;
+  background-color: ; 
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  bottom: 90px;
+}
+
+.busca input[type=search] {
+  width: 30%; 
+}
+
+
+
+div.lista-produtos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.produto{
+  width: 200px;
+  height: 320px;
+  margin: 15px;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+div.produto figure{
+  margin:0;
+}
+
+div.produto a{
+  color: #666;
+}
+
+div.produto .preco{
+  font-weight: bold;
+  color: black;
+  display: block;
+}
+
+div.produto img{
+  width: 120px;
+  transition: 0.5s;
+}
+
+div.produto:hover {
+  box-shadow: 2px 2px 5px #333;
+  transition: 0.5s;
+}
+div.produto .rapida{
+
+  padding: 0px;
+  cursor: pointer;
+}
+
+div.produto .noCarrinho{
+  margin: 20px 5px;
+  padding: 3px;
+  background-color: white;  
+  cursor: default;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  padding: 0;
+}
+
+.social li{
+  display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+    .col-1 {display:none;}
+    .col-2 {width: 100%;}
+    .col-3 {display:none;} 
+    
+
+    footer {
+      flex-direction: row;
+    }  
+    .cadastro{
+      position: absolute;
+      top:0px;
+      right:50px;
+      left: 30px;
+    } 
+    .label-alinhado{
+    width:100px;
+    text-align: center ;
+  }
+  #exibeMenu{
+      display: none;
+    }
+    .menu-opcoes {
+
+        position: absolute;
+        width:100%;
+        bottom: 1px;
+        display: initial;
+    }   
+        
+    .menu-opcoes ul li{
+        display: inline; 
+    }  
+    header h1{
+      font-size: 4em;
+      bottom: 30px;
+    } 
+
+}
+@media only screen and (max-width: 1000px) and (min-width: 600px){
+    .col-1 {display:none;}
+    .col-2 {width: 100%;}
+    .col-3 {display:none;} 
+    .menu-opcoes li a{color: #fff; text-decoration:none; padding:5px 30px; display:block; font-size: 23px;}
+    .menu-opcoes li {
+    width: 250px;
+    border-right: 20px;
+}   
+
+    footer {
+      flex-direction: row;
+    }  
+    .cadastro{
+      position: absolute;
+      top:0px;
+      right:50px;
+      left: 30px;
+    } 
+    .label-alinhado{
+    width:100px;
+    text-align: center ;
+  }
+  #exibeMenu{
+      display: none;
+    }
+    .menu-opcoes {
+        top: 140px;
+        position: absolute;
+        width:100%;
+        bottom: 1px;
+        display: initial;
+    }   
+        
+    .menu-opcoes ul li{
+        display: inline; 
+    }  
+    header h1{
+      font-size: 4em;
+      bottom: 30px;
+    }   
+
+}
+@media only screen and (min-width: 1000px) {
+    .col-1 {width: 20%;}
+    .col-2 {width: 60%;}
+    .col-3 {width: 20%;}
+    
+    .menu-opcoes {
+
+
+        position: absolute;
+        width:100%;
+        bottom: 0;
+        display: initial;
+    }   
+        
+    .menu-opcoes ul li{
+        display: inline; 
+    }   
+
+    #exibeMenu{
+      display: none;
+    }
+
+}  
+
+
+.warper{
+width:100%;
+}
+.warper img{
+display: inline-block;
+width:40%;
+margin:2%;
+vertical-align:top;
+}
+.warper p{
+display: inline-block;
+width: 50%;
+margin:2%;
+vertical-align:top;
+}
